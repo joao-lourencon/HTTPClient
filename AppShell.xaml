@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="AppPostService.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:AppPostService.Views"
+    Shell.FlyoutBehavior="Disabled"
+    Title="AppPostService">
+
+    <TabBar>
+
+        <ShellContent
+            Title="Posts"
+            ContentTemplate="{DataTemplate local:PostView}"
+            Route="MainPage" />
+
+        <ShellContent
+        Title="To-dos"
+        ContentTemplate="{DataTemplate local:TodosView}"
+        Route="MainPage" /> 
+    </TabBar>
+</Shell>
+
